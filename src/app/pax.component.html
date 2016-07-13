@@ -1,0 +1,67 @@
+<div class="row" style="margin-top: 5%">
+    <div class="col s12 l4 m4">
+        <div class="card" style="min-height:300px;">
+            <div class="card-content teal white-text">
+                <div class="row">
+                    <div class="col s4 l4 m4">
+                        <i class="material-icons">flight_takeoff</i>
+                    </div>
+                    <div class="col s8 l8 m8">
+                        <h6 style="text-transform: uppercase">Economy</h6>
+                        <h6>Dublin To London</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content white teal-text">
+                <div class="row">
+                    <div class="col s6 l6 m6">
+                        <p>Mr. Joe Blogs</p>
+                    </div>
+                    <div class="col s6 l6 m6">
+                        <div class="chip teal white-text">
+                            <span>€35.00<i class="material-icons">close</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="#">Clear all</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 l8 m8">
+        <div class="card" style="min-height:300px;">
+            <div class="card-content white teal-text">
+                <span class="card-title"></span>
+            </div>
+            <div class="card-content white teal-text">
+                <div class="row">
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="small material-icons">business_center</i>
+                    </div>
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="medium material-icons">business_center</i>
+                    </div>
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="large material-icons">business_center</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="medium material-icons" (click)="addBag('small')">add_circle_outline</i>
+                        <i class="medium material-icons" (click)="removeBag('small')">remove_circle_outline</i>
+                    </div>
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="medium material-icons" (click)="addBag('medium')">add_circle_outline</i>
+                        <i class="medium material-icons" (click)="removeBag('medium')">remove_circle_outline</i>
+                    </div>
+                    <div class="col s4 l4 m4 center-align">
+                        <i class="medium material-icons" (click)="addBag('large')">add_circle_outline</i>
+                        <i class="medium material-icons" (click)="removeBag('large')">remove_circle_outline</i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
