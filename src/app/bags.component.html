@@ -16,38 +16,13 @@
         </div>
         <div class="row">
             <div class="col s4 l4 m4 center-align" *ngFor="let bagType of bagTypes">
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag(bagType)">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag(bagType.size, bagType.price)">
                     <i class="material-icons">add</i>
                 </a>
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag(bagType)">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag(bagType.size, bagType.price)">
                     <i class="material-icons">remove</i>
                 </a>
             </div>
-
-            <!--<div class="col s4 l4 m4 center-align">
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('small')">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('small')">
-                    <i class="material-icons">remove</i>
-                </a>
-            </div>
-            <div class="col s4 l4 m4 center-align">
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('medium')">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('medium')">
-                    <i class="material-icons">remove</i>
-                </a>
-            </div>
-            <div class="col s4 l4 m4 center-align">
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('large')">
-                    <i class="material-icons">add</i>
-                </a>
-                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('large')">
-                    <i class="material-icons">remove</i>
-                </a>
-            </div>-->
         </div>
     </div>
 </div>

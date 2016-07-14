@@ -7,6 +7,8 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+    'immutable': 'vendor/immutable/dist/immutable.js',
+    'redux': 'vendor/redux/dist/redux.js'
 };
 
 /** User packages configuration. */

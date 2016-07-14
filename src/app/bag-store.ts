@@ -1,30 +1,22 @@
+import Immutable = require('immutable');
+import { createStore } from 'redux';
+import { IBagAction } from './actions';
+import { reducer } from './reducer';
+
 export class Bag {
-    type: String;
-    price: Number;
+    size: string;
+    price: number;
 }
 
 export class BagStore {
-    bags: Bag[];
 
-    constructor() {
-        this.bags = [];
+    store = createStore(reducer, Immutable.List<Bag>());
+
+    get bags(): Immutable.List<Bag> {
+        return this.store.getState();
     }
 
-    addBag(bag: Bag) {
-        this.bags.push({
-            type: bag.type,
-            price: bag.price
-        });
-        console.log(this.bags);
-    }
-
-    removeBag(bag: Bag) {
-        for (var index = 0; index < this.bags.length; index++) {
-            if( bag.type == this.bags[index].type){
-                this.bags.splice(index, 1);
-                break;
-            }            
-        }
-        console.log(this.bags);
+    dispatch(action: IBagAction) {
+        this.store.dispatch(action);
     }
 }

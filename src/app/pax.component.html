@@ -7,25 +7,30 @@
                         <i class="material-icons">flight_takeoff</i>
                     </div>
                     <div class="col s8 l8 m8">
-                        <h6 style="text-transform: uppercase">Economy</h6>
-                        <h6>Dublin To London</h6>
+                        <h6 style="text-transform: uppercase">{{class}}</h6>
+                        <h6>{{origin}} to {{destination}}</h6>
                     </div>
                 </div>
             </div>
             <div class="card-content white teal-text">
                 <div class="row">
                     <div class="col s6 l6 m6">
-                        <p>Mr. Joe Blogs</p>
+                        <div class="valign-wrapper">
+                            <i class="material-icons">account_circle</i> 
+                            <span class="valign">{{title}} {{firstName}} {{lastName}}</span>
+                        </div>
                     </div>
                     <div class="col s6 l6 m6">
-                        <div class="chip teal white-text" *ngFor="let chip of chips" style="margin-bottom: 1%;">
-                            <span>{{chip.type}} €{{chip.price}}<i class="material-icons">close</i></span>
+                        <div class="chip teal white-text" *ngFor="let chip of store.bags" style="margin-bottom: 1%;">
+                            <span>{{chip.size}} €{{chip.price}}
+                                <i class="material-icons" (click)="removeBag(chip.size, chip.price)">close</i>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card-action">
-                <a href="#">Clear all</a>
+                <a href="#" (click)="removeAll()">Clear all</a>
             </div>
         </div>
     </div>
