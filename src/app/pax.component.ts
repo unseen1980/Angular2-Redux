@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
-import {BagStore} from './bag-store'
+import { BagsComponent } from './bags.component';
+import { BagStore } from './bag-store';
 
 @Component({
     moduleId: module.id,
     selector: 'pax',
-    templateUrl: 'pax.component.html'
+    templateUrl: 'pax.component.html',
+    directives: [BagsComponent]
 })
 
 export class PaxComponent {
-    constructor(private store: BagStore) { }
-
-    addBag(bag) {
-        this.store.addBag(bag);
-    }
-
-    removeBag(bag) {
-        this.store.removeBag(bag);
+    chips;    
+    constructor(private store: BagStore) { 
+        this.chips = this.store.bags;
     }
 }

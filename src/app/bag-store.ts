@@ -1,5 +1,6 @@
 export class Bag {
     type: String;
+    price: Number;
 }
 
 export class BagStore {
@@ -9,19 +10,21 @@ export class BagStore {
         this.bags = [];
     }
 
-    addBag(bag: String) {
+    addBag(bag: Bag) {
         this.bags.push({
-            type: bag
+            type: bag.type,
+            price: bag.price
         });
+        console.log(this.bags);
     }
 
     removeBag(bag: Bag) {
         for (var index = 0; index < this.bags.length; index++) {
-            var element = this.bags[index];
-            if( <any>bag === this.bags[index].type){
+            if( bag.type == this.bags[index].type){
                 this.bags.splice(index, 1);
                 break;
             }            
         }
+        console.log(this.bags);
     }
 }

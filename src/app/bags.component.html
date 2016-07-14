@@ -1,0 +1,53 @@
+<div class="card" style="min-height:300px;">
+    <div class="card-content white teal-text">
+        <span class="card-title"></span>
+    </div>
+    <div class="card-content white teal-text">
+        <div class="row">
+            <div class="col s4 l4 m4 center-align">
+                <i class="small material-icons">business_center</i>
+            </div>
+            <div class="col s4 l4 m4 center-align">
+                <i class="medium material-icons">business_center</i>
+            </div>
+            <div class="col s4 l4 m4 center-align">
+                <i class="large material-icons">business_center</i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4 l4 m4 center-align" *ngFor="let bagType of bagTypes">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag(bagType)">
+                    <i class="material-icons">add</i>
+                </a>
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag(bagType)">
+                    <i class="material-icons">remove</i>
+                </a>
+            </div>
+
+            <!--<div class="col s4 l4 m4 center-align">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('small')">
+                    <i class="material-icons">add</i>
+                </a>
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('small')">
+                    <i class="material-icons">remove</i>
+                </a>
+            </div>
+            <div class="col s4 l4 m4 center-align">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('medium')">
+                    <i class="material-icons">add</i>
+                </a>
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('medium')">
+                    <i class="material-icons">remove</i>
+                </a>
+            </div>
+            <div class="col s4 l4 m4 center-align">
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="addBag('large')">
+                    <i class="material-icons">add</i>
+                </a>
+                <a class="btn-floating btn-large waves-effect waves-light teal" (click)="removeBag('large')">
+                    <i class="material-icons">remove</i>
+                </a>
+            </div>-->
+        </div>
+    </div>
+</div>
