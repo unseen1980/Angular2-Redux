@@ -1,6 +1,6 @@
 {
-  "name": "pax-redux-angular2",
-  "version": "0.0.0",
+  "name": "redux-airline-angular2",
+  "version": "0.5.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
