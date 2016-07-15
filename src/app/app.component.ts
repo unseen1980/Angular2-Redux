@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {PaxComponent} from './pax.component'
+import {PaxComponent} from './pax.component';
 
 @Component({
   moduleId: module.id,

@@ -12,7 +12,7 @@ export function reducer(state: Immutable.List<Bag> = Immutable.List<Bag>(), acti
     case 'REMOVE':
       return state.delete(findBySize());
     case 'REMOVEALL':
-      return state.clear();  
+      return state.clear();
     default:
       return state;
   }

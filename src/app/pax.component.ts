@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { BagsComponent } from './bags.component';
 import { BagStore } from './bag-store';
-import { removeBag, removeAll } from './actions'
+import { removeBag, removeAll } from './actions';
 
 @Component({
     moduleId: module.id,
@@ -24,8 +24,7 @@ export class PaxComponent {
         this.store.dispatch(removeBag(size, price));
     }
 
-    removeAll(){
+    removeAll() {
         this.store.dispatch(removeAll());
     }
-    
 }

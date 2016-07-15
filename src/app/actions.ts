@@ -1,5 +1,3 @@
-import { BagStore } from './bag-store';
-
 export interface IBagAction {
   type: string;
   size?: string;

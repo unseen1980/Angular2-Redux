@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BagStore } from './bag-store';
-import {addBag, removeBag} from './actions'
+import {addBag, removeBag} from './actions';
 
 @Component({
     moduleId: module.id,
@@ -25,5 +25,4 @@ export class BagsComponent {
     removeBag(size, price) {
         this.store.dispatch(removeBag(size, price));
     }
-
 }
