@@ -1,6 +1,6 @@
 # Example on how to Redux + Immutable + Angular2
 
-![alt tag](https://github.com/unseen1980/paxReduxAngular2/blob/master/reduxAirline.PNG?raw=true)
+![alt tag](https://raw.githubusercontent.com/unseen1980/ReduxAirlineAngular2/master/redux_airline.gif)
 
 1. Install angular-cli
 2. Clone repository
