@@ -16,6 +16,10 @@ export class BagStore {
         return this.store.getState();
     }
 
+    get totalCost(): number {
+        return this.bags.reduce((prev, curr) => prev + curr.price, 0);
+    }
+
     dispatch(action: IBagAction) {
         this.store.dispatch(action);
     }
